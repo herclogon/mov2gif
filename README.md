@@ -11,7 +11,7 @@ Install last ffmpeg
 
 Download the script
 <pre>
-> git clone git@github.com:herclogon/mov2gif.git ~/opt/mov2gif
+> git clone https://github.com/herclogon/mov2gif.git ~/opt/mov2gif
 </pre>
 
 Add script initialization to your ~/.bashrc
