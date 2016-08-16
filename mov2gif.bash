@@ -1,5 +1,6 @@
 mov2gif_func() {
-  SCALE=1024
+  SCALE=`ffmpeg -i $1 2>&1 | grep Stream | grep -oP ', \K[0-9]+x[0-9]+' | grep -oP '\K[0-9]+' | head -n 1`
+  echo "Current video width is $SCALE"
   if (( $# < 2 ))
   then
     echo "Usage: ogv2gif <input_video_file> <output_gif_file> [scale=1024]"
@@ -10,6 +11,7 @@ mov2gif_func() {
   if [ -n "$3" ]
   then
     SCALE=$3
+    echo "Using width $SCALE for target file"
   fi
 
   echo "Generating gif pallete accorting to '$1'..."
