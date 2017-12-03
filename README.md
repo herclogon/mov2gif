@@ -1,4 +1,4 @@
-# Script which convert video file to animated gif
+# Convert any video file to animated GIF
 
 ## Installation 
 
