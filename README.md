@@ -1,4 +1,4 @@
-# Convert any video file to animated GIF
+# Convert any video file into animated GIF
 
 ## Installation 
 
